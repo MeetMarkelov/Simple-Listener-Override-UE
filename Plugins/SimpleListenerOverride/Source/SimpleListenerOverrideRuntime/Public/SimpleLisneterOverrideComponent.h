@@ -12,14 +12,14 @@
  * Plus Y axis (Green) - Right
  * Plus Z axis (Blue) - Top
  */
-UCLASS(BlueprintType, meta = (BlueprintSpawnableComponent))
+UCLASS(ClassGroup = ("Listener"), BlueprintType, meta = (BlueprintSpawnableComponent))
 class SIMPLELISTENEROVERRIDERUNTIME_API USimpleLisneterOverrideComponent : public USceneComponent
 {
 	GENERATED_BODY()
 	
 public:
 
-	USimpleLisneterOverrideComponent();
+	USimpleLisneterOverrideComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	UFUNCTION(Category = "Listener", BlueprintCallable)
 	bool OverrideListener();

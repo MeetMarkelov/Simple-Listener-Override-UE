@@ -3,7 +3,8 @@
 #include "SimpleLisneterOverrideComponent.h"
 #include "Kismet/GameplayStatics.h"
 
-USimpleLisneterOverrideComponent::USimpleLisneterOverrideComponent()
+USimpleLisneterOverrideComponent::USimpleLisneterOverrideComponent(const FObjectInitializer& ObjectInitializer) 
+	: Super(ObjectInitializer)
 {
 	//
 }
