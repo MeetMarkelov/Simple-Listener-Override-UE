@@ -1,0 +1,23 @@
+{
+  "FileVersion": 3,
+  "Version": 100,
+  "VersionName": "1.00",
+  "FriendlyName": "Simple Listener Override",
+  "Description": "",
+  "Category": "Gameplay",
+  "CreatedBy": "Vladislav Markelov",
+  "CreatedByURL": "https://twitter.com/meetmarkelov",
+  "DocsURL": "",
+  "MarketplaceURL": "",
+  "SupportURL": "",
+  "EngineVersion": "4.21",
+  "CanContainContent": false,
+  "Installed": true,
+  "Modules": [
+    {
+      "Name": "SimpleListenerOverrideRuntime",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}
