@@ -7,7 +7,7 @@
 
 // USimpleLisneterOverrideStatics
 
-bool USimpleLisneterOverrideStatics::OverrideListener(AActor* Actor)
+bool USimpleLisneterOverrideStatics::OverrideListener(AActor* Actor, const FVector Loc, const FRotator Rot)
 {
 	if (!Actor)
 		return false;
@@ -17,7 +17,7 @@ bool USimpleLisneterOverrideStatics::OverrideListener(AActor* Actor)
 	if (!SimpleListener)
 		return false;
 
-	return SimpleListener->OverrideListener();
+	return SimpleListener->OverrideListener(Loc, Rot);
 }
 
 bool USimpleLisneterOverrideStatics::ClearOverrideListener(UObject* WorldContextObject)
